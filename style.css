@@ -13,6 +13,8 @@ body{
     display: flex;
 
     margin: 0;
+
+    font-family: "Orbitron", sans-serif;
 }
 
 body > div{
@@ -47,6 +49,7 @@ button{
     border: 3.5px solid #2a3550;
     cursor: pointer;
     padding: 4px 7px;
+    font-family: inherit;
 }
 
 button:hover{
