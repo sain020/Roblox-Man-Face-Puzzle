@@ -1,0 +1,94 @@
+:root{
+    --image-size: 360px;
+}
+
+html{
+    font-size: 20px;
+}
+
+body{
+    background-color: #05070d;
+    color: rgb(238, 238, 238);
+
+    display: flex;
+
+    margin: 0;
+}
+
+body > div{
+    width: 50%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+p, h1{
+    line-height: 1;
+    margin: 0;
+}
+
+p{
+    color: rgb(202, 202, 202);
+}
+
+h1{
+    margin-bottom: 40px;
+}
+
+button{
+    font-size: inherit;
+    background-color: #1a2236;
+    color: rgb(232, 231, 231);
+    border-radius: 6px;
+    border: 3.5px solid #2a3550;
+    cursor: pointer;
+    padding: 4px 7px;
+}
+
+button:hover{
+    background-color: #2a3550;
+    border-color: #1a2236;
+}
+
+#board{
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 3px solid #1a2236;
+}
+
+#board td{
+    height: calc(var(--image-size)/4);
+    width: calc(var(--image-size)/4);
+    padding: 0;
+    background-image: url("RobloxManFace.png");
+    cursor: pointer;
+}
+
+#control-panel img{
+    border-radius: 24px;
+}
+
+.tile1  { background-position: 0px 0px; }
+.tile2  { background-position: -90px 0px; }
+.tile3  { background-position: -180px 0px; }
+.tile4  { background-position: -270px 0px; }
+.tile5  { background-position: 0px -90px; }
+.tile6  { background-position: -90px -90px; }
+.tile7  { background-position: -180px -90px; }
+.tile8  { background-position: -270px -90px; }
+.tile9  { background-position: 0px -180px; }
+.tile10 { background-position: -90px -180px; }
+.tile11 { background-position: -180px -180px; }
+.tile12 { background-position: -270px -180px; }
+.tile13 { background-position: 0px -270px; }
+.tile14 { background-position: -90px -270px; }
+.tile15 { background-position: -180px -270px; }
+
+#board td.tile16{
+    cursor: default;
+    background: #05070d;
+}

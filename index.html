@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roblox Man Face Puzzle Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="control-panel">
+        <h1>Roblox Man Face Puzzle Game</h1>
+        <button onclick="newGame()">New Game</button>
+        <button onclick="simpleGame()">Simple Game</button>
+        <p>Moves: <span id="moves">0</span></p>
+        <p>Time: <span id="timer">0</span>s</p>
+        <img src="RobloxManFace.png" alt="Roblox Man Face" width="100">
+    </div>
+    <div id="game-panel">
+            <!-- 1  2  3  4 -->
+            <!-- 5  6  7  8 -->
+            <!-- 9  10 11 12 -->
+            <!-- 13 14 15 16 -->
+            <table id="board">
+                <tr>
+                    <td id="cell1" class="tile1" onclick="clickTile(1)"></td>
+                    <td id="cell2" class="tile2" onclick="clickTile(2)"></td>
+                    <td id="cell3" class="tile3" onclick="clickTile(3)"></td>
+                    <td id="cell4" class="tile4" onclick="clickTile(4)"></td>
+                </tr>
+                <tr>
+                    <td id="cell5" class="tile5" onclick="clickTile(5)"></td>
+                    <td id="cell6" class="tile6" onclick="clickTile(6)"></td>
+                    <td id="cell7" class="tile7" onclick="clickTile(7)"></td>
+                    <td id="cell8" class="tile8" onclick="clickTile(8)"></td>
+                </tr>
+                <tr>
+                    <td id="cell9" class="tile9" onclick="clickTile(9)"></td>
+                    <td id="cell10" class="tile10" onclick="clickTile(10)"></td>
+                    <td id="cell11" class="tile11" onclick="clickTile(11)"></td>
+                    <td id="cell12" class="tile12" onclick="clickTile(12)"></td>
+                </tr>
+                <tr>
+                    <td id="cell13" class="tile13" onclick="clickTile(13)"></td>
+                    <td id="cell14" class="tile14" onclick="clickTile(14)"></td>
+                    <td id="cell15" class="tile15" onclick="clickTile(15)"></td>
+                    <td id="cell16" class="tile16" onclick="clickTile(16)"></td>
+                </tr>
+            </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
